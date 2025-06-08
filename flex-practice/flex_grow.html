@@ -1,0 +1,40 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+.container {
+  display: flex;
+  width: 100%;
+}
+
+.item {
+  border: 1px solid black;
+  padding: 20px;
+}
+
+.one {
+  flex-grow: 1; /* Equal grow */
+}
+
+.two {
+  flex-grow: 3; /* Double grow */
+}
+
+    </style>
+</head>
+
+<body>
+    <!-- flex grow box sizing krta hy jesy yahan box one or box two ko donon ko agr flex grow 1 dia hy to dono ka siz equal hoga agr ek ko 1 or dosry ko 2 ya 3 diya hy  to dosry ka siz 2 ky ya 3 ky brabr ho jayega -->
+<div class="container">
+  <div class="item one">Item 1</div>
+  <div class="item two">Item 2</div>
+</div>
+
+</body>
+
+</html>
