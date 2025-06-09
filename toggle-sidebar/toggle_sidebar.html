@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>toggle with sidebar</title>
+    <style>
+        details {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+
+        }
+
+        summary {
+            background: rgb(212, 212, 180);
+            text-align: left;
+            word-spacing: 2px;
+            text-indent: 2em;
+            color: rgb(7, 43, 74);
+            cursor: pointer;
+        }
+
+        summary::-webkit-details-marker {
+            display: none;
+            /* Chrome, Safari, Edge */
+        }
+
+        summary::marker {
+            content: '';
+            /* Firefox */
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <detail> elliment ek tarha ka dropdown hy jo menu ya content showing me kam ata hy ye drop down hota hy bina javascript ky  -->
+
+    <!-- <details>
+        <summary>  &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;Menu  &#9776;</summary>
+        <ul>
+            <li>home</li>
+            <li>aboute</li>
+            <li>serices</li>
+            <li>cotactus</li>
+        </ul>
+    </details> -->
+    <br>
+    <details class="det">
+        <summary class="sum">click for more Information &nbsp; &nbsp;</summary>
+        <h1>heading</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem, ducimus at esse neque dolores
+            deleniti molestias odit nam incidunt eaque vel laboriosam quo veritatis mollitia excepturi velit ut in.</p>
+    </details>
+</body>
+
+</html>
