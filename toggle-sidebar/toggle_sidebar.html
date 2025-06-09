@@ -12,6 +12,10 @@
             border: 1px solid black;
 
         }
+        details:not([open]){
+            width: 80px; 
+            /* is me jitni chahen width dy skty he phir jb*/
+        }
 
         summary {
             background: rgb(212, 212, 180);
@@ -29,7 +33,7 @@
 
         summary::marker {
             content: '';
-            /* Firefox */
+             /*Firefox */
         }
     </style>
 </head>
@@ -47,8 +51,10 @@
         </ul>
     </details> -->
     <br>
+    <!-- details:not([open]){
+            width: 280px;  is ka kam ye hota hy ye sirf text ky ya togle button ki size ki width rkhta hy jb open kro to text ki width open ho jati -->
     <details class="det">
-        <summary class="sum">click for more Information &nbsp; &nbsp;</summary>
+        <summary class="sum">&#9776;</summary>
         <h1>heading</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi quidem, ducimus at esse neque dolores
             deleniti molestias odit nam incidunt eaque vel laboriosam quo veritatis mollitia excepturi velit ut in.</p>
